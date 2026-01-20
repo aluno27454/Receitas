@@ -1,48 +1,52 @@
-# Projeto Receitas 🍽️
+# 🍽️ Receitas SPA
 
-Aplicação web fullstack para gestão e visualização de receitas.
+Aplicação **Single Page Application (SPA)** para gestão e visualização de receitas culinárias.
 
-## Tecnologias
-- Backend: ASP.NET Core Web API
-- Frontend: React + Vite
-- UI: Bootstrap 5
-- Autenticação: Cookie / Session
-- Base de dados: Entity Framework Core
+Projeto desenvolvido no âmbito da unidade curricular **Interfaces Web II**.
 
-## Funcionalidades
-- Listagem pública de receitas
-- Pesquisa e paginação
-- Detalhe de receita
-- Backoffice protegido por login
-- CRUD de categorias
-- CRUD de receitas com imagem
+---
 
-## Como correr o projeto
+## 🧰 Tecnologias Utilizadas
 
 ### Backend
-```bash
-dotnet run
-```
+- ASP.NET Core (.NET 8)
+- Entity Framework Core
+- SQLite
+- ASP.NET Identity (Autenticação e Autorização)
+- Swagger
+
 ### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+- React
+- React Router
+- Bootstrap 5
+- Fetch API
 
-Frontend disponível em:
-http://localhost:5173
+---
 
-Backend (Swagger):
-http://localhost:5096/swagger
+## ✨ Funcionalidades
 
-## **PASSO 3 — GitHub (entrega final)**
-Se ainda não fizeste:
+### Público
+- Listagem de receitas
+- Pesquisa de receitas
+- Visualização do detalhe da receita
+- Visualização por categorias
 
-```bash
-git add .
-git commit -m "Projeto Receitas - backend + frontend"
-git branch -M main
-git remote add origin https://github.com/TEU_USER/TEU_REPO.git
-git push -u origin main
+### Autenticação
+- Registo de utilizadores
+- Login / Logout
+- Sessão persistente via cookies
 
+### Backoffice (Editor)
+- Criar, editar e apagar receitas
+- Criar, editar e apagar categorias
+- Controlo de permissões (apenas dono ou admin pode editar/apagar)
+
+---
+
+## 🔐 Conta Admin (Seed)
+
+Ao arrancar o backend é criado automaticamente um utilizador administrador:
+
+```text
+Email: admin@admin.com
+Password: Admin123!
