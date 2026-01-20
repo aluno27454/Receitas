@@ -1,0 +1,13 @@
+# backend
+**/bin/
+**/obj/
+**/.vs/
+**/*.db
+appsettings.Development.json
+
+# frontend
+frontend/node_modules/
+
+# IDE
+.idea/
+.vscode/
